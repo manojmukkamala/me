@@ -475,28 +475,28 @@ div#notebook {
  background-color: #ffffff;
  min-height: 0px;
  box-shadow: none;
- width: 80%;
+ width: 66%;
  margin-right: auto;
  margin-left: auto;
 }
 div#ipython-main-app.container {
- width: 80%;
+ width: 66%;
  margin-right: auto;
  margin-left: auto;
  margin-right: auto;
  margin-left: auto;
 }
 .container {
- width: 80%;
+ width: 66%;
  margin-right: auto;
  margin-left: auto;
 }
 div#menubar-container {
  width: 100%;
- width: 80%;
+ width: 66%;
 }
 div#header-container {
- width: 80%;
+ width: 66%;
 }
 .notebook_app #header,
 .edit_app #header {
@@ -1424,6 +1424,7 @@ select.form-control.select-xs {
  -webkit-box-shadow: none;
  box-shadow: none;
 }
+
 /* Added by Manoj */
 img {
 display: block;
