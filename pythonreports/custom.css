@@ -5,19 +5,19 @@
  src: local('"Fira Code"'), url('fonts/firacode.otf') format('opentype');
 }
 @font-face {
- font-family: "Roboto";
+ font-family: "Open Sans";
  font-weight: normal;
  font-style: normal;
- src: local('"Roboto"'), url('fonts/Roboto-Regular.ttf') format('truetype');
+ src: local('"Open Sans"'), url('fonts/open-sans-regular.ttf') format('truetype');
 }
 @font-face {
- font-family: "Lato";
+ font-family: "Open Sans";
  font-weight: normal;
  font-style: normal;
- src: local('"Lato"'), url('fonts/Lato-Regular.ttf') format('truetype');
+ src: local('"Open Sans"'), url('fonts/open-sans-regular.ttf') format('truetype');
 }
 div#notebook {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  line-height: 170%;
  color: #303030;
@@ -26,7 +26,7 @@ div#notebook {
 }
 body,
 div.body {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  color: #303030;
  background-color: #ffffff;
@@ -41,7 +41,7 @@ body.notebook_app {
  overflow-y: hidden;
 }
 a {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  color: #303030;
  -webkit-font-smoothing: antialiased !important;
 }
@@ -204,7 +204,7 @@ span#sort-name.btn.btn-xs.btn-default.sort-action:hover .fa {
  font-size: 18px;
 }
 div#notebook_toolbar div.dynamic-instructions {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 17px;
  color: #828892;
 }
@@ -395,14 +395,14 @@ div.list_item:hover {
  margin-top: -2px;
 }
 ul#tabs a {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 13.5pt;
  font-weight: normal;
  font-style: normal;
  text-shadow: none !important;
 }
 .nav-tabs {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 13.5pt;
  font-weight: normal;
  font-style: normal;
@@ -463,7 +463,7 @@ ul#tabs a {
  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 div#notebook {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  padding-top: 4px;
 }
@@ -506,7 +506,7 @@ div#header-container {
 }
 #header,
 .edit_app #header {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  box-shadow: none;
  background-color: #ffffff;
@@ -548,7 +548,7 @@ p.navbar-text.indicator_area {
  color: #ff7823;
 }
 .navbar-default {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  background-color: #ffffff;
  border-color: #d4d4d4;
@@ -556,7 +556,7 @@ p.navbar-text.indicator_area {
  padding-bottom: 0px;
 }
 .navbar-default .navbar-nav > li > a {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  color: #303030;
  display: block;
@@ -671,12 +671,12 @@ div.notification_widget.info,
 .item_buttons .running-indicator {
  padding-top: 4px;
  color: #009e07;
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
 }
 #notification_trusted {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  border: none;
  background: transparent;
  background-color: transparent;
@@ -824,13 +824,13 @@ i.fa.fa-icon {
 }
 .fa {
  display: inline-block;
- font: normal normal normal 10pt/1 "FontAwesome", "Lato", sans-serif;
+ font: normal normal normal 10pt/1 "FontAwesome", "Open Sans", sans-serif;
  text-rendering: auto;
  -webkit-font-smoothing: antialiased;
  -moz-osx-font-smoothing: grayscale;
 }
 .dropdown-menu {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  box-shadow: none;
  padding: 0px;
@@ -841,7 +841,7 @@ i.fa.fa-icon {
  line-height: 1;
 }
 .dropdown-menu:hover {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  box-shadow: none;
  padding: 0px;
@@ -852,7 +852,7 @@ i.fa.fa-icon {
  line-height: 1;
 }
 .dropdown-menu > li > a {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 10.1pt;
  display: block;
  padding: 10px 20px 9px 10px;
@@ -886,7 +886,7 @@ i.fa.fa-icon {
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 10.1pt;
  font-weight: normal;
  color: #828892;
@@ -916,7 +916,7 @@ div.kse-dropdown > .dropdown-menu,
 }
 .btn,
 .btn-default {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  color: #303030;
  background: #e5e5e5;
  background-color: #e5e5e5;
@@ -1123,7 +1123,7 @@ div.dynamic-buttons > button,
  z-index: 2;
 }
 .dropdown-header {
- font-family: "Lato", sans-serif !important;
+ font-family: "Open Sans", sans-serif !important;
  font-size: 11.1pt !important;
  color: #ff7823 !important;
  border-bottom: none !important;
@@ -1133,7 +1133,7 @@ div.dynamic-buttons > button,
 span#last-modified.btn.btn-xs.btn-default.sort-action,
 span#sort-name.btn.btn-xs.btn-default.sort-action,
 span#file-size.btn.btn-xs.btn-default.sort-action {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 16px;
  background-color: transparent;
  background: transparent;
@@ -1267,7 +1267,7 @@ div.modal-footer > button:hover {
  transition: 200ms ease;
 }
 .modal-content {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 10.1pt;
  position: relative;
  background: #e4e4e4;
@@ -1278,7 +1278,7 @@ div.modal-footer > button:hover {
  outline: none;
 }
 .modal-header {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  color: #303030;
  background: #e4e4e4;
@@ -1288,7 +1288,7 @@ div.modal-footer > button:hover {
  min-height: 16.4286px;
 }
 .modal-content h4 {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 16pt;
  color: #303030;
  padding: 5px;
@@ -1322,7 +1322,7 @@ div.panel,
 div.panel-default,
 .panel,
 .panel-default {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  background-color: #f4f4f4;
  color: #303030;
@@ -1350,7 +1350,7 @@ div.container-fluid {
 }
 div.form-control,
 .form-control {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: initial;
  color: #303030;
  background-color: #ffffff;
@@ -1424,7 +1424,6 @@ select.form-control.select-xs {
  -webkit-box-shadow: none;
  box-shadow: none;
 }
-
 /* Added by Manoj */
 img {
 display: block;
@@ -1817,9 +1816,9 @@ div.cell.selected .out_prompt_overlay.prompt {
 div.text_cell,
 div.text_cell_render pre,
 div.text_cell_render {
- font-family: "Roboto", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11pt;
- line-height: 130% !important;
+ line-height: 200% !important;
  color: #353535;
  background: #ffffff;
  background-color: #ffffff;
@@ -1848,28 +1847,28 @@ div.cell.text_cell .CodeMirror pre {
  line-height: 170% !important;
 }
 div.cell.text_cell.rendered.selected {
- font-family: "Roboto", sans-serif;
+ font-family: "Open Sans", sans-serif;
  line-height: 170% !important;
  background: #ffffff;
  background-color: #ffffff;
  border-radius: 0px;
 }
 div.cell.text_cell.unrendered.selected {
- font-family: "Roboto", sans-serif;
+ font-family: "Open Sans", sans-serif;
  line-height: 170% !important;
  background: #ffffff;
  background-color: #ffffff;
  border-radius: 0px;
 }
 div.cell.text_cell.selected {
- font-family: "Roboto", sans-serif;
+ font-family: "Open Sans", sans-serif;
  line-height: 170% !important;
  background: #ffffff;
  background-color: #ffffff;
  border-radius: 0px;
 }
 .edit_mode div.cell.text_cell.selected {
- font-family: "Roboto", sans-serif;
+ font-family: "Open Sans", sans-serif;
  line-height: 170% !important;
  background: #ffffff;
  background-color: #ffffff;
@@ -1878,7 +1877,7 @@ div.cell.text_cell.selected {
 div.text_cell.unrendered,
 div.text_cell.unrendered.selected,
 div.edit_mode div.text_cell.unrendered {
- font-family: "Roboto", sans-serif;
+ font-family: "Open Sans", sans-serif;
  line-height: 170% !important;
  background: #ffffff;
  background-color: #ffffff;
@@ -2028,7 +2027,7 @@ div.text_cell_render h4,
 div.rendered_html h4,
 div.text_cell_render h5,
 div.rendered_html h5 {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  margin: 0.4em .2em .3em .2em !important;
 }
 .rendered_html h1:first-child,
@@ -2112,11 +2111,11 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
  border: none;
 }
 .rendered_html td {
- font-family: "Lato", sans-serif !important;
+ font-family: "Open Sans", sans-serif !important;
  font-size: 10.5pt;
 }
 .rendered_html table {
- font-family: "Lato", sans-serif !important;
+ font-family: "Open Sans", sans-serif !important;
  margin-left: 8px;
  margin-right: auto;
  border: none;
@@ -2126,7 +2125,7 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
  table-layout: fixed;
 }
 .rendered_html thead {
- font-family: "Lato", sans-serif !important;
+ font-family: "Open Sans", sans-serif !important;
  font-size: 11.5pt !important;
  background: #ebebeb;
  color: #353535;
@@ -2154,7 +2153,7 @@ div.widget-area {
  color: #303030;
 }
 div.widget-area a {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 10.1pt;
  font-weight: normal;
  font-style: normal;
@@ -2163,7 +2162,7 @@ div.widget-area a {
 }
 div.widget-area a:hover,
 div.widget-area a:focus {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 10.1pt;
  font-weight: normal;
  font-style: normal;
@@ -2235,7 +2234,7 @@ div.widget-label {
  margin-left: 12px;
 }
 .rendered_html :link {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 100%;
  color: #ff7823;
  text-decoration: underline;
@@ -2247,7 +2246,7 @@ div.widget-label {
 }
 .rendered_html :visited:hover,
 .rendered_html :link:hover {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 100%;
  color: #f96000;
 }
@@ -2290,7 +2289,7 @@ div#nbextensions-configurator-container.container,
  margin-left: auto;
 }
 div.nbext-selector > nav > .nav > li > a {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 10.5pt;
  padding: 2px 5px;
 }
@@ -2316,7 +2315,7 @@ div.nbext-selector > nav > .nav > li.active:hover {
  -webkit-font-smoothing: subpixel-antialiased !important;
 }
 div.nbext-readme > .nbext-readme-contents > .rendered_html {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.5pt;
  line-height: 145%;
  padding: 1em 1em;
@@ -2615,7 +2614,7 @@ video {
  z-index: 1;
 }
 .typeahead-field input {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  color: #303030;
  border: none;
  font-size: 28pt;
@@ -2633,7 +2632,7 @@ body > div.modal.cmd-palette.typeahead-field {
  background-color: #f4f4f4;
 }
 .typeahead-container button {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 28pt;
  background-color: #e4e4e4;
  border: none;
@@ -2668,7 +2667,7 @@ body > div.modal.cmd-palette.typeahead-field {
 }
 .typeahead-dropdown,
 .typeahead-list {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-size: 11.1pt;
  color: #303030;
  background-color: #ffffff;
@@ -3169,7 +3168,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
  color: #055be0;
 }
 div.cell.text_cell .cm-s-default .cm-header {
- font-family: "Lato", sans-serif;
+ font-family: "Open Sans", sans-serif;
  font-weight: normal;
  color: #126dce !important;
  margin-top: 0.3em !important;
@@ -3296,4 +3295,3 @@ span.save_widget span.filename:hover {
         }
     });
 </script>
-    
