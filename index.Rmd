@@ -1,0 +1,147 @@
+---
+title: Welcome to my Web Presence
+output: html_document
+---
+
+---
+
+<img src="space.png" width=1200 height=500>
+
+<center>Mankind was born on Earth. It was never meant to die here - Interstellar</center>
+
+---
+
+<center><h2> ABOUT ME </h2></center>
+
+---
+
+#### I Speak
+__Proficient:__ Telugu, English, Hindi<br>
+__Rudimentary:__ Spanish<br>
+__Other__: Morse
+<br><br>
+
+#### I Love
+__Data:__ Machine Learning, Deep Learning, AI, Data Science<br>
+__Science:__ Astronomy, Quantum Physics<br>
+__Tech:__ Quantum Computers, CRISPR, AI, CV, Robots<br>
+__Spirituality:__ Meditation, Connecting Science & Spirituality<br>
+__Other:__ Nutritious Food, Fitness<br>
+
+[Futurism](https://futurism.com/) is my messenger of Science and Tech updates.
+<br><br>
+
+#### I Work 
+Currently a Data Analyst primarily working with <br>
+__Tools:__ Python, SQL, R, PySpark, AWS <br>
+__Tasks:__ Data Analysis, Data Visualization, Data Cleansing, Data Engineering, Machine Learning <br>
+
+I crave for Data Science & Machine Learning. 
+
+---
+
+<center><h2> PROJECTS </h2></center>
+
+---
+
+__Work gives you meaning and purpose and life is empty without it__ - Stephen Hawking <img src="wip.png" width=200 height=100 align=right>
+<br><br>
+The projects section is a life time Work in Progress. 
+Because life is empty without it.
+<br><br>
+
+### Volcanoes On Venus
+- Volcanoes on Venus is a Machine Learning Project to identify Volcanoes in a given Venus surface image.
+- __Volcanoes On Venus__ documentation can be found at __[VolcanoesOnVenus Documentaion](https://manojmukkamala.github.io/VolcanoesOnVenus/)__. 
+<br><br>
+
+### NameMaker
+- NameMaker is a Machine Learning Project to learn the name patterns of US and Indian first names using a Recurrent Neural Network and generate new names based on these patterns.
+- __NameMaker__ documentation can be found at __[NameMaker Repository](https://github.com/manojmukkamala/NameMaker)__. 
+<br><br>
+
+### Predicting Pulsar Stars
+- Predicting Pulsar Stars is a Machine Learning Project and as the name says, the goal was to build a model that predicts a pulsar star using 8 attributes of the star profile.
+- __Predicting Pulsar Stars__ documentation can be found at __[Predicting Pulsar Stars Repository](https://github.com/manojmukkamala/PredictingPulsarStars)__. 
+<br><br>
+
+###  GiJu
+- GiJu is shorthand notation for GitHub and Jupyter Notebook. You can use just your GitHub Repo and jupyter Notebook to create breautiful websites.
+- __GiJu__ documentation can be found at __[GiJu Documentation](giju/giju.html)__.
+<br><br>
+
+
+### Play Ground
+I have created the following data visualizations in Jupyter Notebook and created beautiful reports out of it by following the steps in Project GiJu. These are still Work In Progress.
+
+- __[DataVisualization](pythonreports/DataVisualization.html)__ page has the exercises from Kaggle's __[Data Visualization](https://www.kaggle.com/alexisbcook/hello-seaborn)__ course.
+
+- __[DataVisualizationfromNon-CoderToCoder](pythonreports/DataVisualizationfromNon-CoderToCoder.html)__ page has the exercises from Kaggle's another __[Data Visualization](https://www.kaggle.com/residentmario/welcome-to-data-visualization)__ course.
+<br>
+
+---
+
+<center><h2> MORE ME </h2></center>
+
+---
+
+### Books
+
+__Science Fiction:__ 
+
+- Hitchhikers Guide to the Galaxy
+- The Restaurant at the End of the Universe
+
+__Personality Development:__ 
+
+- Problem Solving 101
+- Power of SubConscious Mind
+- Think & Grow Rich
+- How to Win Friends & Influence People
+- Talking to Strangers (In Progress)
+
+__Investment:__
+
+- Rich Dad Poor Dad
+- Elements of Investing
+
+<br>
+---
+
+### Podcasts
+
+<img src="pod.png" width=300 height=200 align=right>
+
+- I listen to Podcasts while working out and I found this guy named AJ Hoge who runs the [Effortless English Club](https://effortlessenglishclub.com/). His podcasts are really cool and I particularly liked his [Movie Technique](https://www.youtube.com/watch?v=791cOfTEkEc). 
+
+- Movie Technique is a method to improve English Speaking using a Movie. 
+
+__Personality Development:__ 
+
+- Also, I love the podcasts from [Farnam Street](https://fs.blog/the-knowledge-project/). They are very informative.
+
+__Technology:__
+
+- Recently, I started listening to the Towards Data Science and Artificial Intelligence by Lex Fridman and I personally recommend [the Episode with Andrew Ng](https://www.youtube.com/watch?v=0jspaMLxBig&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
+
+<br><br>
+
+### TED Talks
+
+- I feel TED talks are like Gatorades for Motivation. Provides Instant Relief from Depression.
+
+- I have a list of TED talks that are my favourites but this TED talk by Stephen Duneier is very inspiring and worth watching
+
+```{=html}
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/TQMbvJNRpLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+```
+
+<br>
+
+- This video explains the power of Women in Science and Technology. I am proud of my motherland, India.
+
+```{=html}
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/ZSKahzrHd20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+```

@@ -1,0 +1,11 @@
+name: "MANOJ MUKKAMALA"
+output_dir: "."
+navbar:
+  title: "MANOJ MUKKAMALA"
+  author:
+    - name: "Manoj Mukkamala"
+    
+output:
+  html_document:
+    theme: flatly
+    css: style.css
