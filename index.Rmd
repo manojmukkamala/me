@@ -5,7 +5,7 @@ output: html_document
 
 ---
 
-<img src="space.png" width=1200 height=500>
+<img src="space.png" width=800 height=450>
 
 <center>Mankind was born on Earth. It was never meant to die here - Interstellar</center>
 
@@ -15,25 +15,48 @@ output: html_document
 
 ---
 
+#### Education
+
+__Masters__ in Management Information Systems at __Northern Illinois University__, DeKalb IL
+
+__Bachelors__ in Electrical & Electronics Enfineering at __K L University__, India
+
+__Machine Learning__ from Coursera
+
+__Deep Learning Specialization__ from Coursera
+
+<br>
+
 #### I Speak
+
 __Proficient:__ Telugu, English, Hindi<br>
+
 __Rudimentary:__ Spanish<br>
+
 __Other__: Morse
 <br><br>
 
 #### I Love
+
 __Data:__ Machine Learning, Deep Learning, AI, Data Science<br>
+
 __Science:__ Astronomy, Quantum Physics<br>
+
 __Tech:__ Quantum Computers, CRISPR, AI, CV, Robots<br>
+
 __Spirituality:__ Meditation, Connecting Science & Spirituality<br>
+
 __Other:__ Nutritious Food, Fitness<br>
 
 [Futurism](https://futurism.com/) is my messenger of Science and Tech updates.
 <br><br>
 
 #### I Work 
+
 Currently a Data Analyst primarily working with <br>
+
 __Tools:__ Python, SQL, R, PySpark, AWS <br>
+
 __Tasks:__ Data Analysis, Data Visualization, Data Cleansing, Data Engineering, Machine Learning <br>
 
 I crave for Data Science & Machine Learning. 
