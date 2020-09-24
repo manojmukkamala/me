@@ -17,13 +17,13 @@ output: html_document
 
 #### Education
 
-__Masters__ in Management Information Systems at __Northern Illinois University__, DeKalb IL
+__Masters__ in Management Information Systems at __[Northern Illinois University](https://www.niu.edu/)__, DeKalb IL
 
-__Bachelors__ in Electrical & Electronics Enfineering at __K L University__, India
+__Bachelors__ in Electrical & Electronics Enfineering at __[K L University](https://www.kluniversity.in/)__, India
 
-__Machine Learning__ from Coursera
+__[Machine Learning](https://www.coursera.org/learn/machine-learning)__ from Coursera
 
-__Deep Learning Specialization__ from Coursera
+__[Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)__ from Coursera
 
 <br>
 
@@ -38,7 +38,7 @@ __Other__: Morse
 
 #### I Love
 
-__Data:__ Machine Learning, Deep Learning, AI, Data Science<br>
+__Data:__ Data Science, Machine Learning, Deep Learning, AI<br>
 
 __Science:__ Astronomy, Quantum Physics<br>
 
@@ -46,7 +46,7 @@ __Tech:__ Quantum Computers, CRISPR, AI, CV, Robots<br>
 
 __Spirituality:__ Meditation, Connecting Science & Spirituality<br>
 
-__Other:__ Nutritious Food, Fitness<br>
+__Other:__ Good Food, Fitness<br>
 
 [Futurism](https://futurism.com/) is my messenger of Science and Tech updates.
 <br><br>
@@ -58,8 +58,6 @@ Currently a Data Analyst primarily working with <br>
 __Tools:__ Python, SQL, R, PySpark, AWS <br>
 
 __Tasks:__ Data Analysis, Data Visualization, Data Cleansing, Data Engineering, Machine Learning <br>
-
-I crave for Data Science & Machine Learning. 
 
 ---
 
@@ -88,18 +86,15 @@ Because life is empty without it.
 - __Predicting Pulsar Stars__ documentation can be found at __[Predicting Pulsar Stars Repository](https://github.com/manojmukkamala/PredictingPulsarStars)__. 
 <br><br>
 
+### Tutorials Walkthroughs
+I have created the following data visualizations in Jupyter Notebook and created beautiful reports out of it by following the steps in Project GiJu. These are still Work In Progress.
+
+- __[DataVisualizationfromNon-CoderToCoder](pythonreports/DataVisualizationfromNon-CoderToCoder.html)__ page has the exercises from Kaggle's another __[Data Visualization](https://www.kaggle.com/residentmario/welcome-to-data-visualization)__ course.
+<br><br>
+
 ###  GiJu
 - GiJu is shorthand notation for GitHub and Jupyter Notebook. You can use just your GitHub Repo and jupyter Notebook to create breautiful websites.
 - __GiJu__ documentation can be found at __[GiJu Documentation](giju/giju.html)__.
-<br><br>
-
-
-### Play Ground
-I have created the following data visualizations in Jupyter Notebook and created beautiful reports out of it by following the steps in Project GiJu. These are still Work In Progress.
-
-- __[DataVisualization](pythonreports/DataVisualization.html)__ page has the exercises from Kaggle's __[Data Visualization](https://www.kaggle.com/alexisbcook/hello-seaborn)__ course.
-
-- __[DataVisualizationfromNon-CoderToCoder](pythonreports/DataVisualizationfromNon-CoderToCoder.html)__ page has the exercises from Kaggle's another __[Data Visualization](https://www.kaggle.com/residentmario/welcome-to-data-visualization)__ course.
 <br>
 
 ---
@@ -112,21 +107,32 @@ I have created the following data visualizations in Jupyter Notebook and created
 
 __Science Fiction:__ 
 
-- Hitchhikers Guide to the Galaxy
-- The Restaurant at the End of the Universe
+- Hitchhikers Guide to the Galaxy by Douglas Adams
+- The Restaurant at the End of the Universe by Douglas Adams
 
 __Personality Development:__ 
 
-- Problem Solving 101
-- Power of SubConscious Mind
-- Think & Grow Rich
-- How to Win Friends & Influence People
-- Talking to Strangers (In Progress)
+- Problem Solving 101 by Ken Watanabe
+- Power of SubConscious Mind by Joseph Murphy
+- Think & Grow Rich by Napoleon Hill
+- How to Win Friends & Influence People by Dale Carnegie
+- Talking to Strangers by Malcolm Gladwell (In Progress)
 
 __Investment:__
 
-- Rich Dad Poor Dad
-- Elements of Investing
+- Rich Dad Poor Dad by Robert T.Kiyosaki
+- Elements of Investing by Burton G.Malkiel & Charles D.Ellis
+
+__Career Development:__
+
+- Data Science and Big Data Analytics by DELL EMC
+- Statistics by Robert S Witte and John S Witte
+
+__Other:__
+
+- Case Interview Secrets by Victor Cheng
+- 2 Hour Job Search by Steve Dalton
+- Behavioral Interview: Q&A Framework for Successful Job Interviews by H. Shane Chang
 
 <br>
 ---
@@ -145,7 +151,7 @@ __Personality Development:__
 
 __Technology:__
 
-- Recently, I started listening to the Towards Data Science and Artificial Intelligence by Lex Fridman and I personally recommend [the Episode with Andrew Ng](https://www.youtube.com/watch?v=0jspaMLxBig&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
+- Recently, I started listening to the Towards Data Science and Artificial Intelligence by Lex Fridman and to all aspiring Data Scientists, I recommend [the Episode with Andrew Ng](https://www.youtube.com/watch?v=0jspaMLxBig&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
 
 <br><br>
 
@@ -162,7 +168,7 @@ __Technology:__
 
 <br>
 
-- This video explains the power of Women in Science and Technology. I am proud of my motherland, India.
+- This video explains the power of Women in Science and Technology.
 
 ```{=html}
 
