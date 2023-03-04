@@ -5,7 +5,7 @@ output: html_document
 
 ---
 
-<img src="space.png" width=800 height=450>
+<img src="images/space.png" width=800 height=450>
 
 <center>Mankind was born on Earth. It was never meant to die here - Interstellar</center>
 
@@ -53,11 +53,11 @@ __Other:__ Good Food, Fitness<br>
 
 #### I Work 
 
-Currently a Data Analyst primarily working with <br>
+Currently a Data Engineer primarily working with <br>
 
-__Tools:__ Python, SQL, R, PySpark, AWS <br>
+__Tools:__ Python, SQL, R, PySpark, GCP <br>
 
-__Tasks:__ Data Analysis, Data Visualization, Data Cleansing, Data Engineering, Machine Learning <br>
+__Tasks:__ Data Engineering, Data Analysis, Data Visualization, Data Cleansing, Machine Learning <br>
 
 ---
 
@@ -65,10 +65,16 @@ __Tasks:__ Data Analysis, Data Visualization, Data Cleansing, Data Engineering, 
 
 ---
 
-__Work gives you meaning and purpose and life is empty without it__ - Stephen Hawking <img src="wip.png" width=200 height=100 align=right>
+__Work gives you meaning and purpose and life is empty without it__ - Stephen Hawking <img src="images/wip.png" width=200 height=100 align=right>
 <br><br>
 The projects section is a life time Work in Progress. 
 Because life is empty without it.
+<br><br>
+
+### Open Data Platform
+- Building an end to end data platform to produce, stream, consume, process and surface data using open source tools and technologies. Leveraging docker for container centric development and platform agnostic deployment.
+- __Technologies__: Docker, Spark, Kafka, Python, Prometheus, Grafana, Superset, MySQL
+- __Open Data Platform__ project can be found at __[Open Data Platform Documentaion](https://github.com/srivyshnavi93/vysh_temp/tree/staging#readme)__. 
 <br><br>
 
 ### Volcanoes On Venus
@@ -139,7 +145,7 @@ __Other:__
 
 ### Podcasts
 
-<img src="pod.png" width=300 height=200 align=right>
+<img src="images/pod.png" width=300 height=200 align=right>
 
 - I listen to Podcasts while working out and I found this guy named AJ Hoge who runs the [Effortless English Club](https://effortlessenglishclub.com/). His podcasts are really cool and I particularly liked his [Movie Technique](https://www.youtube.com/watch?v=791cOfTEkEc). 
 

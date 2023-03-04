@@ -13,22 +13,36 @@
 
 <title>Welcome to my Web Presence</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -41,32 +55,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -77,10 +67,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -97,40 +83,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -158,7 +120,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -170,7 +132,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -180,11 +142,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -196,13 +175,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -210,16 +188,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -263,7 +234,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -281,7 +252,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -291,7 +262,7 @@ $(document).ready(function () {
 
 
 <hr />
-<p><img src="space.png" width=800 height=450></p>
+<p><img src="images/space.png" width=800 height=450></p>
 <center>
 Mankind was born on Earth. It was never meant to die here - Interstellar
 </center>
@@ -304,10 +275,18 @@ ABOUT ME
 <hr />
 <div id="education" class="section level4">
 <h4>Education</h4>
-<p><strong>Masters</strong> in Management Information Systems at <strong><a href="https://www.niu.edu/">Northern Illinois University</a></strong>, DeKalb IL</p>
-<p><strong>Bachelors</strong> in Electrical &amp; Electronics Enfineering at <strong><a href="https://www.kluniversity.in/">K L University</a></strong>, India</p>
-<p><strong><a href="https://www.coursera.org/learn/machine-learning">Machine Learning</a></strong> from Coursera</p>
-<p><strong><a href="https://www.coursera.org/specializations/deep-learning">Deep Learning Specialization</a></strong> from Coursera</p>
+<p><strong>Masters</strong> in Management Information Systems at
+<strong><a href="https://www.niu.edu/">Northern Illinois
+University</a></strong>, DeKalb IL</p>
+<p><strong>Bachelors</strong> in Electrical &amp; Electronics
+Enfineering at <strong><a href="https://www.kluniversity.in/">K L
+University</a></strong>, India</p>
+<p><strong><a
+href="https://www.coursera.org/learn/machine-learning">Machine
+Learning</a></strong> from Coursera</p>
+<p><strong><a
+href="https://www.coursera.org/specializations/deep-learning">Deep
+Learning Specialization</a></strong> from Coursera</p>
 <p><br></p>
 </div>
 <div id="i-speak" class="section level4">
@@ -318,18 +297,23 @@ ABOUT ME
 </div>
 <div id="i-love" class="section level4">
 <h4>I Love</h4>
-<p><strong>Data:</strong> Data Science, Machine Learning, Deep Learning, AI<br></p>
+<p><strong>Data:</strong> Data Science, Machine Learning, Deep Learning,
+AI<br></p>
 <p><strong>Science:</strong> Astronomy, Quantum Physics<br></p>
-<p><strong>Tech:</strong> Quantum Computers, CRISPR, AI, CV, Robots<br></p>
-<p><strong>Spirituality:</strong> Meditation, Connecting Science &amp; Spirituality<br></p>
+<p><strong>Tech:</strong> Quantum Computers, CRISPR, AI, CV,
+Robots<br></p>
+<p><strong>Spirituality:</strong> Meditation, Connecting Science &amp;
+Spirituality<br></p>
 <p><strong>Other:</strong> Good Food, Fitness<br></p>
-<p><a href="https://futurism.com/">Futurism</a> is my messenger of Science and Tech updates. <br><br></p>
+<p><a href="https://futurism.com/">Futurism</a> is my messenger of
+Science and Tech updates. <br><br></p>
 </div>
 <div id="i-work" class="section level4">
 <h4>I Work</h4>
-<p>Currently a Data Analyst primarily working with <br></p>
-<p><strong>Tools:</strong> Python, SQL, R, PySpark, AWS <br></p>
-<p><strong>Tasks:</strong> Data Analysis, Data Visualization, Data Cleansing, Data Engineering, Machine Learning <br></p>
+<p>Currently a Data Engineer primarily working with <br></p>
+<p><strong>Tools:</strong> Python, SQL, R, PySpark, GCP <br></p>
+<p><strong>Tasks:</strong> Data Engineering, Data Analysis, Data
+Visualization, Data Cleansing, Machine Learning <br></p>
 <hr />
 <center>
 <h2>
@@ -337,41 +321,82 @@ PROJECTS
 </h2>
 </center>
 <hr />
-<p><strong>Work gives you meaning and purpose and life is empty without it</strong> - Stephen Hawking <img src="wip.png" width=200 height=100 align=right> <br><br> The projects section is a life time Work in Progress. Because life is empty without it. <br><br></p>
+<p><strong>Work gives you meaning and purpose and life is empty without
+it</strong> - Stephen Hawking
+<img src="images/wip.png" width=200 height=100 align=right> <br><br> The
+projects section is a life time Work in Progress. Because life is empty
+without it. <br><br></p>
+</div>
+<div id="open-data-platform" class="section level3">
+<h3>Open Data Platform</h3>
+<ul>
+<li>Building an end to end data platform to produce, stream, consume,
+process and surface data using open source tools and technologies.
+Leveraging docker for container centric development and platform
+agnostic deployment.</li>
+<li><strong>Technologies</strong>: Docker, Spark, Kafka, Python,
+Prometheus, Grafana, Superset, MySQL</li>
+<li><strong>Open Data Platform</strong> project can be found at
+<strong><a
+href="https://github.com/srivyshnavi93/vysh_temp/tree/staging#readme">Open
+Data Platform Documentaion</a></strong>. <br><br></li>
+</ul>
 </div>
 <div id="volcanoes-on-venus" class="section level3">
 <h3>Volcanoes On Venus</h3>
 <ul>
-<li>Volcanoes on Venus is a Machine Learning Project to identify Volcanoes in a given Venus surface image.</li>
-<li><strong>Volcanoes On Venus</strong> documentation can be found at <strong><a href="https://manojmukkamala.github.io/VolcanoesOnVenus/">VolcanoesOnVenus Documentaion</a></strong>. <br><br></li>
+<li>Volcanoes on Venus is a Machine Learning Project to identify
+Volcanoes in a given Venus surface image.</li>
+<li><strong>Volcanoes On Venus</strong> documentation can be found at
+<strong><a
+href="https://manojmukkamala.github.io/VolcanoesOnVenus/">VolcanoesOnVenus
+Documentaion</a></strong>. <br><br></li>
 </ul>
 </div>
 <div id="namemaker" class="section level3">
 <h3>NameMaker</h3>
 <ul>
-<li>NameMaker is a Machine Learning Project to learn the name patterns of US and Indian first names using a Recurrent Neural Network and generate new names based on these patterns.</li>
-<li><strong>NameMaker</strong> documentation can be found at <strong><a href="https://github.com/manojmukkamala/NameMaker">NameMaker Repository</a></strong>. <br><br></li>
+<li>NameMaker is a Machine Learning Project to learn the name patterns
+of US and Indian first names using a Recurrent Neural Network and
+generate new names based on these patterns.</li>
+<li><strong>NameMaker</strong> documentation can be found at <strong><a
+href="https://github.com/manojmukkamala/NameMaker">NameMaker
+Repository</a></strong>. <br><br></li>
 </ul>
 </div>
 <div id="predicting-pulsar-stars" class="section level3">
 <h3>Predicting Pulsar Stars</h3>
 <ul>
-<li>Predicting Pulsar Stars is a Machine Learning Project and as the name says, the goal was to build a model that predicts a pulsar star using 8 attributes of the star profile.</li>
-<li><strong>Predicting Pulsar Stars</strong> documentation can be found at <strong><a href="https://github.com/manojmukkamala/PredictingPulsarStars">Predicting Pulsar Stars Repository</a></strong>. <br><br></li>
+<li>Predicting Pulsar Stars is a Machine Learning Project and as the
+name says, the goal was to build a model that predicts a pulsar star
+using 8 attributes of the star profile.</li>
+<li><strong>Predicting Pulsar Stars</strong> documentation can be found
+at <strong><a
+href="https://github.com/manojmukkamala/PredictingPulsarStars">Predicting
+Pulsar Stars Repository</a></strong>. <br><br></li>
 </ul>
 </div>
 <div id="tutorials-walkthroughs" class="section level3">
 <h3>Tutorials Walkthroughs</h3>
-<p>I have created the following data visualizations in Jupyter Notebook and created beautiful reports out of it by following the steps in Project GiJu. These are still Work In Progress.</p>
+<p>I have created the following data visualizations in Jupyter Notebook
+and created beautiful reports out of it by following the steps in
+Project GiJu. These are still Work In Progress.</p>
 <ul>
-<li><strong><a href="pythonreports/DataVisualizationfromNon-CoderToCoder.html">DataVisualizationfromNon-CoderToCoder</a></strong> page has the exercises from Kaggle’s another <strong><a href="https://www.kaggle.com/residentmario/welcome-to-data-visualization">Data Visualization</a></strong> course. <br><br></li>
+<li><strong><a
+href="pythonreports/DataVisualizationfromNon-CoderToCoder.html">DataVisualizationfromNon-CoderToCoder</a></strong>
+page has the exercises from Kaggle’s another <strong><a
+href="https://www.kaggle.com/residentmario/welcome-to-data-visualization">Data
+Visualization</a></strong> course. <br><br></li>
 </ul>
 </div>
 <div id="giju" class="section level3">
 <h3>GiJu</h3>
 <ul>
-<li>GiJu is shorthand notation for GitHub and Jupyter Notebook. You can use just your GitHub Repo and jupyter Notebook to create breautiful websites.</li>
-<li><strong>GiJu</strong> documentation can be found at <strong><a href="giju/giju.html">GiJu Documentation</a></strong>. <br></li>
+<li>GiJu is shorthand notation for GitHub and Jupyter Notebook. You can
+use just your GitHub Repo and jupyter Notebook to create breautiful
+websites.</li>
+<li><strong>GiJu</strong> documentation can be found at <strong><a
+href="giju/giju.html">GiJu Documentation</a></strong>. <br></li>
 </ul>
 <hr />
 <center>
@@ -410,39 +435,55 @@ MORE ME
 <ul>
 <li>Case Interview Secrets by Victor Cheng</li>
 <li>2 Hour Job Search by Steve Dalton</li>
-<li>Behavioral Interview: Q&amp;A Framework for Successful Job Interviews by H. Shane Chang</li>
+<li>Behavioral Interview: Q&amp;A Framework for Successful Job
+Interviews by H. Shane Chang</li>
 </ul>
 </div>
 <div id="section" class="section level2">
 <h2><br></h2>
 <div id="podcasts" class="section level3">
 <h3>Podcasts</h3>
-<p><img src="pod.png" width=300 height=200 align=right></p>
+<p><img src="images/pod.png" width=300 height=200 align=right></p>
 <ul>
-<li><p>I listen to Podcasts while working out and I found this guy named AJ Hoge who runs the <a href="https://effortlessenglishclub.com/">Effortless English Club</a>. His podcasts are really cool and I particularly liked his <a href="https://www.youtube.com/watch?v=791cOfTEkEc">Movie Technique</a>.</p></li>
-<li><p>Movie Technique is a method to improve English Speaking using a Movie.</p></li>
+<li><p>I listen to Podcasts while working out and I found this guy named
+AJ Hoge who runs the <a
+href="https://effortlessenglishclub.com/">Effortless English Club</a>.
+His podcasts are really cool and I particularly liked his <a
+href="https://www.youtube.com/watch?v=791cOfTEkEc">Movie
+Technique</a>.</p></li>
+<li><p>Movie Technique is a method to improve English Speaking using a
+Movie.</p></li>
 </ul>
 <p><strong>Personality Development:</strong></p>
 <ul>
-<li>Also, I love the podcasts from <a href="https://fs.blog/the-knowledge-project/">Farnam Street</a>. They are very informative.</li>
+<li>Also, I love the podcasts from <a
+href="https://fs.blog/the-knowledge-project/">Farnam Street</a>. They
+are very informative.</li>
 </ul>
 <p><strong>Technology:</strong></p>
 <ul>
-<li>Recently, I started listening to the Towards Data Science and Artificial Intelligence by Lex Fridman and to all aspiring Data Scientists, I recommend <a href="https://www.youtube.com/watch?v=0jspaMLxBig&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4">the Episode with Andrew Ng</a></li>
+<li>Recently, I started listening to the Towards Data Science and
+Artificial Intelligence by Lex Fridman and to all aspiring Data
+Scientists, I recommend <a
+href="https://www.youtube.com/watch?v=0jspaMLxBig&amp;list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4">the
+Episode with Andrew Ng</a></li>
 </ul>
 <p><br><br></p>
 </div>
 <div id="ted-talks" class="section level3">
 <h3>TED Talks</h3>
 <ul>
-<li><p>I feel TED talks are like Gatorades for Motivation. Provides Instant Relief from Depression.</p></li>
-<li><p>I have a list of TED talks that are my favourites but this TED talk by Stephen Duneier is very inspiring and worth watching</p></li>
+<li><p>I feel TED talks are like Gatorades for Motivation. Provides
+Instant Relief from Depression.</p></li>
+<li><p>I have a list of TED talks that are my favourites but this TED
+talk by Stephen Duneier is very inspiring and worth watching</p></li>
 </ul>
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/TQMbvJNRpLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 <p><br></p>
 <ul>
-<li>This video explains the power of Women in Science and Technology.</li>
+<li>This video explains the power of Women in Science and
+Technology.</li>
 </ul>
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/ZSKahzrHd20" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
@@ -458,7 +499,7 @@ MORE ME
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -476,7 +517,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
